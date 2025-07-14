@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Specialty Welding Services | Falcon Plant Resources</title>
+    <meta name="description" content="Expert welding services for titanium, Inconel, duplex, and other specialty alloys. Precision welding for coke drums, boilers, furnaces, and industrial piping.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="icon" href="./image001.png" type="image/png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-87ZVJN8SYC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-87ZVJN8SYC');
+    </script>
+    <style>
+        /* MAIN SITE STYLES (Consistent with index.html) */
+        :root {
+            --primary-red: #BD1F28;
+            --primary-black: #000000;
+            --primary-gray: #A2A9AD;
+            --white: #FFFFFF;
+            --dark-gray: #333333;
+            --light-gray: #F5F5F5;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 2rem; }
+        h3 { font-size: 1.75rem; }
+        h4 { font-size: 1.5rem; }
+        
+        @media (min-width: 768px) {
+            h1 { font-size: 3.5rem; }
+            h2 { font-size: 2.5rem; }
+            h3 { font-size: 2rem; }
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            color: var(--primary-red);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--primary-black);
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 4px;
+            transition: var(--transition);
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        .btn-red {
+            background-color: var(--primary-red);
+            color: var(--white);
+            border: 2px solid var(--primary-red);
+        }
+        
+        .btn-red:hover {
+            background-color: transparent;
+            color: var(--primary-red);
+        }
+        
+        .btn-outline-white {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+        
+        .btn-outline-white:hover {
+            background-color: var(--white);
+            color: var(--primary-black);
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .text-white {
+            color: var(--white);
+        }
+        
+        .bg-red {
+            background-color: var(--primary-red);
+        }
+        
+        .bg-black {
+            background-color: var(--primary-black);
+        }
+        
+        .bg-gray {
+            background-color: var(--primary-gray);
+        }
+        
+        .bg-light-gray {
+            background-color: var(--light-gray);
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-red);
+            margin: 20px auto 0;
+        }
+        
+        /* Header Styles (Same as main site) */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+        
+        header.scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-img {
+            height: 50px;
+            transition: var(--transition);
+        }
+        
+        .logo-text {
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin-left: 10px;
+            color: var(--primary-black);
+        }
+        
+        .logo-text span {
+            color: var(--primary-red);
+        }
+        
+        /* Navigation (Same as main site) */
+        .nav-menu {
+            display: flex;
+        }
+        
+        .nav-menu li {
+            position: relative;
+            margin-left: 30px;
+        }
+        
+        .nav-menu li a {
+            font-weight: 600;
+            color: var(--primary-black);
+            position: relative;
+            padding: 5px 0;
+        }
+        
+        .nav-menu li a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-red);
+            transition: var(--transition);
+        }
+        
+        .nav-menu li a:hover:after,
+        .nav-menu li.active a:after {
+            width: 100%;
+        }
+        
+        .nav-menu li.active a {
+            color: var(--primary-red);
+        }
+        
+        .submenu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 200px;
+            background-color: var(--white);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 100;
+        }
+        
+        .nav-menu li:hover .submenu {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .submenu li {
+            margin: 0;
+            padding: 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .submenu li a {
+            display: block;
+            padding: 10px 15px;
+        }
+        
+        /* Mobile Menu (Same as main site) */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--primary-black);
+            cursor: pointer;
+        }
+        
+        /* WELDING-SPECIFIC STYLES */
+        .service-hero {
+            position: relative;
+            height: 60vh;
+            min-height: 500px;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/welding-hero.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+            text-align: center;
+            padding-top: 80px;
+        }
+        
+        .service-hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .service-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 800;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .service-hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease 0.3s both;
+        }
+        
+        /* Service Detail Section */
+        .service-detail {
+            position: relative;
+            padding: 80px 0;
+            background-color: var(--white);
+        }
+        
+        .service-detail-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .service-detail-text {
+            flex: 1;
+        }
+        
+        .service-detail-image {
+            flex: 1;
+            position: relative;
+        }
+        
+        .service-detail-image img {
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Materials & Equipment Lists - Enhanced Design */
+        .materials-section {
+            background-color: var(--light-gray);
+            padding: 80px 0;
+        }
+        
+        .materials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .material-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: var(--transition);
+            position: relative;
+            border-top: 4px solid var(--primary-red);
+        }
+        
+        .material-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .material-icon {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-red);
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .material-content {
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .material-content h3 {
+            margin-bottom: 15px;
+            color: var(--primary-black);
+        }
+        
+        /* Equipment Section */
+        .equipment-section {
+            background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('../images/welding-equipment-bg.jpg') center/cover;
+            padding: 80px 0;
+            color: var(--white);
+        }
+        
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .equipment-card {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(5px);
+            border-radius: 8px;
+            padding: 30px;
+            transition: var(--transition);
+            border-left: 4px solid var(--primary-red);
+        }
+        
+        .equipment-card:hover {
+            background: rgba(189, 31, 40, 0.2);
+            transform: translateY(-5px);
+        }
+        
+        .equipment-card h3 {
+            color: var(--white);
+            margin-bottom: 15px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .equipment-card h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--primary-red);
+        }
+        
+        /* CTA Section */
+        .service-cta {
+            background-color: var(--primary-red);
+            color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .service-detail-content {
+                flex-direction: column;
+            }
+            
+            .service-detail-image {
+                order: -1;
+            }
+            
+            .service-hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background-color: var(--white);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: var(--transition);
+                z-index: 999;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .nav-menu li {
+                margin: 15px 0;
+            }
+            
+            .submenu {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                display: none;
+                background: none;
+                box-shadow: none;
+                width: 100%;
+                padding-left: 20px;
+            }
+            
+            .nav-menu li:hover .submenu {
+                display: none;
+            }
+            
+            .nav-menu li.active .submenu {
+                display: block;
+            }
+            
+            .service-hero {
+                height: 50vh;
+                min-height: 400px;
+            }
+            
+            .service-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .materials-grid,
+            .equipment-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+       <div class="container header-container">
+            <a href="../index.html" class="logo">
+                <img src="../image001.png" alt="Falcon Plant Resources Logo" class="logo-img">
+                <span class="logo-text">FALCON <span>PLANT RESOURCES</span></span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#about-us">Our Company</a></li>
+                    <li class="active">
+                        <a href="../index.html#services-id">Services</a>
+                        <ul class="submenu">
+                            <li><a href="../services/mechanical.html">Mechanical Services</a></li>
+                        <li><a href="../services/welding.html">Specialty Welding</a></li>
+                        <li><a href="../services/torque.html">Torque Services</a></li>
+                        <li><a href="../services/bolt_tensioning.html">Bolt Tensioning</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../index.html#contacto-formulario">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+   
+<!-- Hero Section -->
+<section class="service-hero" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-banner-2.jpg') no-repeat center center/cover;">
+    <style>
+        .service-hero {
+    position: relative;
+    height: 60vh;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    text-align: center;
+    padding-top: 80px;
+}
+
+.service-hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.service-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    animation: fadeInUp 1s ease;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.service-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease 0.3s both;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+    </style>
+        <div class="service-hero-content">
+            <h1>Specialty Welding Services</h1>
+            <p>Precision welding solutions for the most challenging industrial environments and specialty alloys</p>
+            <a href="#contact" class="btn btn-red">Get a Welding Quote</a>
+        </div>
+    </section>
+
+    <!-- Service Detail Section -->
+    <section class="service-detail section">
+        <div class="container">
+            <h2 class="section-title">Expert Welding Solutions</h2>
+            <p class="text-center" style="max-width: 800px; margin: 0 auto 40px;">With a wealth of expertise amassed over years of tackling the most challenging welding scenarios, our team is well-versed in resolving intricate issues within various refineries and gas plant units.</p>
+            
+            <div class="service-detail-content">
+                <div class="service-detail-text">
+                    <p><strong>Our specialized knowledge comes to the forefront particularly in environments where unique alloys play a pivotal role in diverse industrial processes.</strong></p>
+                    <p>We pride ourselves on our ability to navigate and conquer the complexities associated with welding in such critical settings, ensuring precision, durability, and safety in every project we undertake.</p>
+                </div>
+                
+                <div class="service-detail-image">
+                    <img src="../images/welding.png" alt="Welding Technician at Work">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials Section -->
+    <section class="materials-section section">
+        <div class="container">
+            <h2 class="section-title">We Provide Welding for Alloys Such As:</h2>
+            
+            <div class="materials-grid">
+                <div class="material-card">
+                    <div class="material-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <div class="material-content">
+                        <h3>Titanium</h3>
+                        <p>Precision welding for corrosion-resistant titanium components in demanding environments.</p>
+                    </div>
+                </div>
+                
+                <div class="material-card">
+                    <div class="material-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="material-content">
+                        <h3>Inconel</h3>
+                        <p>Expert welding for high-temperature Inconel alloys in extreme service conditions.</p>
+                    </div>
+                </div>
+                
+                <div class="material-card">
+                    <div class="material-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="material-content">
+                        <h3>Duplex</h3>
+                        <p>Specialized techniques for duplex stainless steels requiring precise heat control.</p>
+                    </div>
+                </div>
+                
+                <div class="material-card">
+                    <div class="material-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </div>
+                    <div class="material-content">
+                        <h3>Austenitic Stainless</h3>
+                        <p>High-quality welding for corrosion-resistant austenitic stainless steel applications.</p>
+                    </div>
+                </div>
+                
+                <div class="material-card">
+                    <div class="material-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="material-content">
+                        <h3>Brass</h3>
+                        <p>Precision welding for brass components requiring excellent thermal conductivity.</p>
+                    </div>
+                </div>
+                
+                <div class="material-card">
+                    <div class="material-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <div class="material-content">
+                        <h3>Aluminum</h3>
+                        <p>Specialized techniques for welding lightweight aluminum with minimal distortion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section class="equipment-section section">
+        <div class="container">
+            <h2 class="section-title text-white">We Provide Welding for Equipment Such As:</h2>
+            
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <h3>Coke Drums</h3>
+                    <p>Specialized welding and repair services for coke drums in refinery operations.</p>
+                </div>
+                
+                <div class="equipment-card">
+                    <h3>Boilers</h3>
+                    <p>High-quality welding for boiler components and pressure parts.</p>
+                </div>
+                
+                <div class="equipment-card">
+                    <h3>Furnaces</h3>
+                    <p>Precision welding for furnace components exposed to extreme temperatures.</p>
+                </div>
+                
+                <div class="equipment-card">
+                    <h3>Repairs</h3>
+                    <p>Emergency and planned repair welding for critical industrial assets.</p>
+                </div>
+                
+                <div class="equipment-card">
+                    <h3>Piping</h3>
+                    <p>Code-compliant welding for process piping systems in all service conditions.</p>
+                </div>
+                
+                <div class="equipment-card">
+                    <h3>Overlay</h3>
+                    <p>Protective weld overlay services to extend equipment service life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<style>
+            /* CSS Reset and Base Styles */
+        :root {
+            --primary-red: #BD1F28;
+            --primary-black: #000000;
+            --primary-gray: #A2A9AD;
+            --white: #FFFFFF;
+            --dark-gray: #333333;
+            --light-gray: #F5F5F5;
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+            background-color: var(--white);
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        h1 { font-size: 2.5rem; }
+        h2 { font-size: 2rem; }
+        h3 { font-size: 1.75rem; }
+        h4 { font-size: 1.5rem; }
+        
+        @media (min-width: 768px) {
+            h1 { font-size: 3.5rem; }
+            h2 { font-size: 2.5rem; }
+            h3 { font-size: 2rem; }
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            color: var(--primary-red);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--primary-black);
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        ul {
+            list-style: none;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 4px;
+            transition: var(--transition);
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        .btn-red {
+            background-color: var(--primary-red);
+            color: var(--white);
+            border: 2px solid var(--primary-red);
+        }
+        
+        .btn-red:hover {
+            background-color: transparent;
+            color: var(--primary-red);
+        }
+        
+        .btn-outline-white {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+        
+        .btn-outline-white:hover {
+            background-color: var(--white);
+            color: var(--primary-black);
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        .text-white {
+            color: var(--white);
+        }
+        
+        .bg-red {
+            background-color: var(--primary-red);
+        }
+        
+        .bg-black {
+            background-color: var(--primary-black);
+        }
+        
+        .bg-gray {
+            background-color: var(--primary-gray);
+        }
+        
+        .bg-light-gray {
+            background-color: var(--light-gray);
+        }
+        
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            position: relative;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-red);
+            margin: 20px auto 0;
+        }
+        
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: var(--transition);
+        }
+        
+        header.scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-img {
+            height: 50px;
+            transition: var(--transition);
+        }
+        
+        .logo-text {
+            font-weight: 800;
+            font-size: 1.5rem;
+            margin-left: 10px;
+            color: var(--primary-black);
+        }
+        
+        .logo-text span {
+            color: var(--primary-red);
+        }
+        
+        /* Navigation */
+        .nav-menu {
+            display: flex;
+        }
+        
+        .nav-menu li {
+            position: relative;
+            margin-left: 30px;
+        }
+        
+        .nav-menu li a {
+            font-weight: 600;
+            color: var(--primary-black);
+            position: relative;
+            padding: 5px 0;
+        }
+        
+        .nav-menu li a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-red);
+            transition: var(--transition);
+        }
+        
+        .nav-menu li a:hover:after,
+        .nav-menu li.active a:after {
+            width: 100%;
+        }
+        
+        .nav-menu li.active a {
+            color: var(--primary-red);
+        }
+        
+        .submenu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 200px;
+            background-color: var(--white);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 100;
+        }
+        
+        .nav-menu li:hover .submenu {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .submenu li {
+            margin: 0;
+            padding: 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .submenu li a {
+            display: block;
+            padding: 10px 15px;
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--primary-black);
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1513828583688-c52646db42da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+            text-align: center;
+            padding-top: 80px;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 800;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease 0.3s both;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            animation: fadeInUp 1s ease 0.6s both;
+        }
+        
+        /* Falcon Animation */
+        .falcon-animation {
+            position: absolute;
+            right: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 200px;
+            height: 200px;
+            z-index: 1;
+        }
+        
+        .falcon-logo {
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"><path fill="%23BD1F28" d="M250,100 C300,150 350,200 400,250 C350,300 300,350 250,400 C200,350 150,300 100,250 C150,200 200,150 250,100 Z"/><path fill="%23000000" d="M250,150 C280,180 310,210 340,240 C310,270 280,300 250,330 C220,300 190,270 160,240 C190,210 220,180 250,150 Z"/></svg>');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            animation: fly 6s infinite ease-in-out;
+        }
+        
+        @keyframes fly {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            25% {
+                transform: translateY(-20px) rotate(2deg);
+            }
+            50% {
+                transform: translateY(0) rotate(0deg);
+            }
+            75% {
+                transform: translateY(20px) rotate(-2deg);
+            }
+        }
+        
+        /* About Section */
+        .about {
+            position: relative;
+            padding: 100px 0;
+            background-color: var(--white);
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-image {
+            flex: 1;
+            position: relative;
+        }
+        
+        .about-image img {
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Services Section */
+        .services {
+            background-color: var(--light-gray);
+            padding: 100px 0;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .service-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .service-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+        
+        .service-card:hover .service-image img {
+            transform: scale(1.05);
+        }
+        
+        .service-content {
+            padding: 20px;
+        }
+        
+        .service-content h3 {
+            color: var(--primary-red);
+            margin-bottom: 10px;
+        }
+        
+        /* Stats Section */
+        .stats {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1544&q=80') no-repeat center center/cover;
+            padding: 80px 0;
+            color: var(--white);
+            text-align: center;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+        
+        .stat-item {
+            padding: 30px;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary-red);
+            margin-bottom: 10px;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 100px 0;
+            background-color: var(--white);
+        }
+        
+        .contact-container {
+            display: flex;
+            gap: 50px;
+        }
+        
+        .contact-info {
+            flex: 1;
+        }
+        
+        .contact-info h3 {
+            color: var(--primary-red);
+            margin-bottom: 20px;
+        }
+        
+        .contact-info ul li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-info ul li i {
+            margin-right: 15px;
+            color: var(--primary-red);
+            font-size: 1.2rem;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .contact-form {
+            flex: 1;
+            background-color: var(--light-gray);
+            padding: 30px;
+            border-radius: 8px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+            transition: var(--transition);
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-red);
+            box-shadow: 0 0 0 2px rgba(189, 31, 40, 0.2);
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary-black);
+            color: var(--white);
+            padding: 60px 0 20px;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-logo {
+            margin-bottom: 20px;
+        }
+        
+        .footer-logo img {
+            height: 50px;
+        }
+        
+        .footer-about p {
+            margin-bottom: 20px;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: var(--white);
+            transition: var(--transition);
+        }
+        
+        .social-links a:hover {
+            background-color: var(--primary-red);
+            transform: translateY(-3px);
+        }
+        
+        .footer-links h3 {
+            color: var(--white);
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-links h3:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background-color: var(--primary-red);
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links ul li a {
+            color: var(--primary-gray);
+            transition: var(--transition);
+        }
+        
+        .footer-links ul li a:hover {
+            color: var(--primary-red);
+            padding-left: 5px;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--primary-gray);
+            font-size: 0.9rem;
+        }
+        
+        .footer-bottom a {
+            color: var(--primary-gray);
+        }
+        
+        .footer-bottom a:hover {
+            color: var(--primary-red);
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .about-content,
+            .contact-container {
+                flex-direction: column;
+            }
+            
+            .about-image {
+                order: -1;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background-color: var(--white);
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                transition: var(--transition);
+                z-index: 999;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .nav-menu li {
+                margin: 15px 0;
+            }
+            
+            .submenu {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                display: none;
+                background: none;
+                box-shadow: none;
+                width: 100%;
+                padding-left: 20px;
+            }
+            
+            .nav-menu li:hover .submenu {
+                display: none;
+            }
+            
+            .nav-menu li.active .submenu {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .falcon-animation {
+                display: none;
+            }
+        }
+</style>
+    <!-- Stats Section -->
+    <section class="stats section">
+        <div class="container">
+            <h2 class="section-title text-center text-white">Why Choose Our Welding Services</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">25+</div>
+                    <h3>Years Experience</h3>
+                    <p>Industrial welding expertise</p>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <h3>Certified Welders</h3>
+                    <p>Highly trained professionals</p>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <h3>Safety Record</h3>
+                    <p>Zero lost-time incidents</p>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <h3>Emergency Service</h3>
+                    <p>Always available when you need us</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="service-cta">
+        <div class="container">
+            <h2>Ready for Precision Welding Solutions?</h2>
+            <p class="text-white" style="max-width: 700px; margin: 0 auto 30px;">Our team of certified welding specialists is ready to handle your most challenging welding requirements with precision and expertise.</p>
+            <a href="../index.html#contacto-formulario" class="btn btn-outline-white">Contact Our Welding Team</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-about">
+                  <img src="../images/black_img_footer.png" alt="Falcon Plant Resources Logo" class="logo-img">
+                    <p>Providing exceptional industrial maintenance services with a commitment to safety, quality, and customer satisfaction since 1998.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../index.html#about-us">Our Company</a></li>
+                        <li><a href="../index.html#services-id">Services</a></li>
+                        <li><a href="../index.html#contacto-formulario">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="../services/mechanical.html">Mechanical Services</a></li>
+                        <li><a href="../services/welding.html">Specialty Welding</a></li>
+                        <li><a href="../services/torque.html">Torque Services</a></li>
+                        <li><a href="../services/bolt_tensioning.html">Bolt Tensioning</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Here will be the full location on Houston, TX</li>
+                        <li><i class="fas fa-phone"></i> Here we will put the phone number</li>
+                        <li><i class="fas fa-envelope"></i> info@falconplantresources.com</li>
+                        <li><i class="fas fa-clock"></i> Here we're gonna put an attention hour</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Falcon Plant Resources. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navMenu = document.getElementById('navMenu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            mobileMenuBtn.innerHTML = navMenu.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Header Scroll Effect
+        const header = document.getElementById('header');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Smooth Scrolling for Anchor Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (navMenu.classList.contains('active')) {
+                        navMenu.classList.remove('active');
+                        mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                    }
+                }
+            });
+        });
+        
+        // Animation on Scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.material-card, .equipment-card, .stat-item');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+        
+        // Set initial state for animated elements
+        document.querySelectorAll('.material-card, .equipment-card, .stat-item').forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+        });
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+    </script>
+</body>
+</html>
