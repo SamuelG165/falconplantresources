@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -194,7 +195,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 0;
+            padding: 50px 0;
         }
         
         .logo {
@@ -203,13 +204,13 @@
         }
         
         .logo-img {
-            height: 50px;
+            height: 90px;
             transition: var(--transition);
         }
         
         .logo-text {
             font-weight: 800;
-            font-size: 1.5rem;
+            font-size: 2rem;
             margin-left: 10px;
             color: var(--primary-black);
         }
@@ -747,10 +748,10 @@
             
             <nav>
                 <ul class="nav-menu" id="navMenu">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="#about-us">Our Company</a></li>
+                    <li class="active"><a href="index.html">Safety</a></li>
+                    <li><a href="#about-us">Quality</a></li>
                     <li>
-                        <a href="#services-id">Services</a>
+                        <a href="#services-id">Industrial Services</a>
                         <ul class="submenu">
                             <li><a href="./services/mechanical.html">Mechanical Services</a></li>
                             <li><a href="./services/welding.html">Specialty Welding</a></li>
@@ -758,7 +759,8 @@
                             <li><a href="./services/bolt_tensioning.html">Bolt Tensioning</a></li>
                         </ul>
                     </li>
-                    <li><a href="#contacto-formulario">Contact</a></li>
+                    <li><a href="#contacto-formulario">Contact us</a></li>
+                    <li><a href="#careers">Careers</a></li>
                 </ul>
             </nav>
         </div>
@@ -1058,6 +1060,161 @@
         </div>
     </section>
 
+
+
+
+<!-- Careers Section -->
+<section id="careers" class="careers-section">
+    <div class="container">
+        <div class="careers-content">
+            <h2 class="section-title">Join Our Flight Crew</h2>
+            
+            <div class="careers-grid">
+                <div class="careers-card">
+                    <div class="careers-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Team Excellence</h3>
+                    <p>Become part of a specialized team that values precision, safety, and continuous growth in the industrial sector.</p>
+                </div>
+                
+                <div class="careers-card">
+                    <div class="careers-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Growth Paths</h3>
+                    <p>We invest in our team's development with training programs and clear career progression opportunities.</p>
+                </div>
+                
+                <div class="careers-card">
+                    <div class="careers-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safety Culture</h3>
+                    <p>Join an organization where safety isn't just policy - it's our core value and way of working.</p>
+                </div>
+            </div>
+            
+            <div class="careers-cta">
+                <div class="cta-content">
+                    <h3>Ready to Soar With Us?</h3>
+                    <p>Send your resume to our talent team and let's explore possibilities together.</p>
+                    <a href="mailto:info@falconplantresources.com" class="btn btn-red">
+                        <i class="fas fa-paper-plane"></i> careers@falconplantresources.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* ======================
+   CAREERS SECTION STYLES
+   ====================== */
+.careers-section {
+    background-color: var(--light-gray);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.careers-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-red), var(--primary-black));
+}
+
+.careers-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.careers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.careers-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: var(--transition);
+    text-align: center;
+    border-top: 3px solid var(--primary-red);
+}
+
+.careers-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.careers-icon {
+    font-size: 2.5rem;
+    color: var(--primary-red);
+    margin-bottom: 20px;
+}
+
+.careers-cta {
+    background: var(--primary-black);
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.careers-cta::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--primary-red);
+}
+
+.cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-content h3 {
+    color: var(--white);
+    margin-bottom: 15px;
+}
+
+.cta-content p {
+    color: var(--primary-gray);
+    margin-bottom: 25px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .careers-section {
+        padding: 60px 0;
+    }
+    
+    .careers-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .careers-cta {
+        padding: 30px 20px;
+    }
+}
+</style>
+
+
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -1082,7 +1239,7 @@
                         <li><a href="#about-us">Our Company</a></li>
                         <li><a href="#services-id">Services</a></li>
                         <li><a href="#contacto-formulario">Contact</a></li>
-                          <!-- Careers button  <li><a href="careers/">Careers</a></li>  -->
+                            <li><a href="#careers">Careers</a></li>  
                     </ul>
                 </div>
                 
