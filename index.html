@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -194,7 +195,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 50px 0;
+            padding: 40px 0;
         }
         
         .logo {
@@ -203,7 +204,7 @@
         }
         
         .logo-img {
-            height: 90px;
+            height: 75px;
             transition: var(--transition);
         }
         
@@ -738,8 +739,7 @@
        <div class="container header-container">
     <a href="index.html" class="logo">
         <!-- Reemplazo del SVG por PNG -->
-        <img src="./image001.png" alt="Falcon Plant Resources Logo" class="logo-img">
-        <span class="logo-text">FALCON <span>PLANT RESOURCES</span></span>
+        <img src="./images/header1.png" alt="Falcon Plant Resources Logo" class="logo-img">
     </a>
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <i class="fas fa-bars"></i>
@@ -747,7 +747,7 @@
             
             <nav>
                 <ul class="nav-menu" id="navMenu">
-                    <li class="active"><a href="index.html">Safety</a></li>
+                    <li class="active"><a href="index.html">Controlled Services</a></li>
                     <li><a href="#about-us">Quality</a></li>
                     <li>
                         <a href="#services-id">Industrial Services</a>
@@ -768,7 +768,90 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Committed to Safety & Quality</h1>
+          <h1 id="typewriter-text">Think Safely. Act Quality. Deliver Excellence.</h1>
+      <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const phrases = [
+            "Think Safely.",
+            "Act Quality.",
+            "Deliver Excellence."
+        ];
+        const element = document.getElementById('typewriter-text');
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let isEnd = false;
+        let typingSpeed = 100; // Velocidad base de escritura
+        
+        function typeWriter() {
+            const currentPhrase = phrases[phraseIndex];
+            
+            if (isDeleting) {
+                // Borrando
+                element.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+                typingSpeed = 50; // Más rápido al borrar
+            } else {
+                // Escribiendo
+                element.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+                typingSpeed = 100; // Velocidad normal al escribir
+            }
+            
+            // Transición entre estados
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                isEnd = true;
+                typingSpeed = 1500; // Pausa al final de la frase
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+            }
+            
+            if (isEnd && !isDeleting) {
+                isDeleting = true;
+                isEnd = false;
+                typingSpeed = 500; // Pausa antes de borrar
+            }
+            
+            setTimeout(typeWriter, typingSpeed);
+        }
+        
+        // Iniciar el efecto
+        setTimeout(typeWriter, 1000);
+    });
+</script>
+<style>
+    .mission-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary-black);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.mission-text::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 3px;
+    background-color: var(--primary-red);
+    transform: translateX(50%);
+    transition: var(--transition);
+}
+
+.mission-text:hover::after {
+    width: 100%;
+    transform: translateX(0);
+}
+</style>
+<p class="mission-text">Our mindset drives our mission.</p>
+<br>
             <p>Backed by more than 25 years of experience, our specialized teams are standing by for all of your mechanical, specialty welding, torque and bolt tensioning needs.</p>
             <div class="hero-buttons">
                 <a href="#services-id" class="btn btn-red">Our Services</a>
@@ -904,7 +987,10 @@
     <section class="services section">
         <div class="container">
             <h2 class="section-title text-center">Our Services</h2>
-            <p class="text-center" style="max-width: 800px; margin: 0 auto 40px;">We provide comprehensive industrial maintenance solutions tailored to your specific needs, ensuring maximum efficiency and safety for your operations.</p>
+            
+<p class="text-center" style="max-width: 800px; margin: 0 auto 40px;">At Falcon Plant Resources, we specialize in precision beveling for a wide range of materials including steel, stainless steel, aluminum, and alloys. Whether you're preparing pipes for high-strength welds or reducing sharp edges for improved handling, our advanced beveling techniques ensure consistency, accuracy, and compliance with industry standards.</p>
+     
+<p class="text-center" style="max-width: 800px; margin: 0 auto 40px;">We provide comprehensive industrial maintenance solutions tailored to your specific needs, ensuring maximum efficiency and safety for your operations.</p>
             
             <div class="services-grid">
                 <div class="service-card">
@@ -953,6 +1039,189 @@
             </div>
         </div>
     </section>
+
+
+
+<!-- New Services Section -->
+<section class="new-services section bg-light-gray">
+    <div class="container">
+        <h2 class="section-title text-center">Precision Solutions</h2>
+        <p class="text-center" style="max-width: 800px; margin: 0 auto 60px;">Expanding our capabilities to deliver cutting-edge solutions for your most challenging industrial maintenance needs.</p>
+        
+        <div class="services-grid-enhanced">
+            <!-- Service 1 -->
+            <div class="service-card-enhanced">
+                <div class="service-icon-enhanced">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <div class="service-content-enhanced">
+                    <h3>Nut Splitting Services</h3>
+                    <p>Stuck nuts and seized fasteners can bring critical operations to a halt. Our nut splitting services offer a fast, safe, and damage-free solution for removing corroded or frozen nuts without compromising the integrity of studs, bolts, or flanges.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Hydraulic precision tools</li>
+                        <li><i class="fas fa-check-circle"></i> Zero damage to threads</li>
+                        <li><i class="fas fa-check-circle"></i> Hot work elimination</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="service-card-enhanced">
+                <div class="service-icon-enhanced">
+                    <i class="fas fa-wave-square"></i>
+                </div>
+                <div class="service-content-enhanced">
+                    <h3>Ultrasonic Bolt Monitoring</h3>
+                    <p>Ensure critical joint integrity with precision and confidence. Our Ultrasonic Bolt Monitoring service uses advanced sound wave technology to accurately measure bolt elongation, preload, and tension in real-time—without disassembly.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Real-time tension data</li>
+                        <li><i class="fas fa-check-circle"></i> Non-destructive testing</li>
+                        <li><i class="fas fa-check-circle"></i> Certified technicians</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Service 3 -->
+            <div class="service-card-enhanced">
+                <div class="service-icon-enhanced">
+                    <i class="fas fa-cog"></i>
+                </div>
+                <div class="service-content-enhanced">
+                    <h3>Flange Facing Services</h3>
+                    <p>Ensure flawless sealing and extended equipment life with our expert flange facing services. We specialize in restoring damaged or worn flange surfaces to original manufacturer specifications—or better.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> On-site machining</li>
+                        <li><i class="fas fa-check-circle"></i> Corrosion repair</li>
+                        <li><i class="fas fa-check-circle"></i> Precision alignment</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Service 4 -->
+            <div class="service-card-enhanced">
+                <div class="service-icon-enhanced">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <div class="service-content-enhanced">
+                    <h3>Drilling and Tapping</h3>
+                    <p>Precision drilling and tapping services for critical applications. Whether you're preparing parts for assembly, fabrication, or custom machining, our services are tailored to meet your exact specifications.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> High-tolerance work</li>
+                        <li><i class="fas fa-check-circle"></i> All materials</li>
+                        <li><i class="fas fa-check-circle"></i> Emergency services</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center" style="margin-top: 50px;">
+            <a href="#contacto-formulario" class="btn btn-red" style="padding: 15px 40px; font-size: 1.1rem;">
+                <i class="fas fa-paper-plane"></i> Request Service Details
+            </a>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* ======================
+       NEW SERVICES STYLES
+       ====================== */
+    .services-grid-enhanced {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+    }
+    
+    .service-card-enhanced {
+        background: var(--white);
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        transition: var(--transition);
+        display: flex;
+        flex-direction: column;
+        border-top: 4px solid var(--primary-red);
+    }
+    
+    .service-card-enhanced:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+    
+    .service-icon-enhanced {
+        background: linear-gradient(135deg, var(--primary-red), #d12a34);
+        color: white;
+        font-size: 2.5rem;
+        padding: 30px;
+        text-align: center;
+    }
+    
+    .service-content-enhanced {
+        padding: 30px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .service-content-enhanced h3 {
+        color: var(--primary-black);
+        margin-bottom: 15px;
+        font-size: 1.5rem;
+        position: relative;
+        padding-bottom: 10px;
+    }
+    
+    .service-content-enhanced h3:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 3px;
+        background-color: var(--primary-red);
+    }
+    
+    .service-content-enhanced p {
+        margin-bottom: 20px;
+        color: var(--dark-gray);
+        flex-grow: 1;
+    }
+    
+    .service-features {
+        list-style: none;
+        margin-top: 15px;
+    }
+    
+    .service-features li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .service-features i {
+        color: var(--primary-red);
+        margin-right: 10px;
+        font-size: 1.1rem;
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        .service-card-enhanced {
+            flex-direction: column;
+        }
+        
+        .service-icon-enhanced {
+            padding: 20px;
+        }
+        
+        .service-content-enhanced {
+            padding: 20px;
+        }
+    }
+</style>
+
+
 
     <!-- Stats Section -->
     <section class="stats section">
