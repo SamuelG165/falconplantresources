@@ -699,47 +699,105 @@
         </div>
     </header>
 
-<!-- Hero Section -->
-<section class="service-hero" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/hero-banner-2.jpg') no-repeat center center/cover;">
+<!-- Hero Section - Mismo texto con efectos visuales mejorados -->
+<section class="service-hero">
     <style>
         .service-hero {
-    position: relative;
-    height: 60vh;
-    min-height: 400px;
-    display: flex;
-    align-items: center;
-    color: var(--white);
-    text-align: center;
-    padding-top: 80px;
-}
+            position: relative;
+            height: 60vh;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+            text-align: center;
+            padding-top: 80px;
+            background: 
+                /* Gradiente rojo-negro (costados) */
+                linear-gradient(90deg, rgba(139,0,0,0.7) 0%, rgba(0,0,0,0.9) 20%, rgba(0,0,0,0.9) 80%, rgba(139,0,0,0.7) 100%),
+                /* Imagen original centrada */
+                url('../images/welding\ header.png') no-repeat center center;
+            background-size: auto, 387px 519px;
+            overflow: hidden;
+        }
 
-.service-hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-    position: relative;
-    z-index: 2;
-}
+        /* Fondo blur para costados */
+        .service-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('../images/welding\ header.png') no-repeat center center/cover;
+            filter: blur(8px) brightness(0.6);
+            z-index: -1;
+            opacity: 0.7;
+        }
 
-.service-hero h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-weight: 800;
-    animation: fadeInUp 1s ease;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-}
+        /* Imagen central realzada */
+        .service-hero::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 387px;
+            height: 519px;
+            background: url('../images/welding\ header.png') no-repeat center center;
+            background-size: cover;
+            filter: brightness(1.15) contrast(1.1);
+            z-index: 0;
+        }
 
-.service-hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    animation: fadeInUp 1s ease 0.3s both;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
-}
+        .service-hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .service-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-weight: 800;
+            animation: fadeInUp 1s ease;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .service-hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease 0.3s both;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .service-hero {
+                background-size: auto, 300px auto;
+            }
+            .service-hero::after {
+                width: 300px;
+                height: auto;
+            }
+        }
     </style>
     <div class="service-hero-content">
         <h1>Mechanical Services</h1>
         <p>Expert preventative and corrective maintenance solutions to optimize your industrial equipment performance</p>
+        <a href="#contact" class="btn btn-red">Get a Welding Quote</a>
     </div>
 </section>
     <!-- Service Detail Section -->
@@ -784,7 +842,7 @@
                 </div>
                 
                 <div class="service-detail-image">
-                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Mechanical Services">
+                    <img src="../images/Mechanical2.jpg" alt="Mechanical Services">
                 </div>
             </div>
         </div>
