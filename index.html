@@ -775,8 +775,13 @@
     <!-- Contenido principal -->
     <div class="hero-content">
         <h1 id="typewriter-text">Think Safely. Act Quality. Deliver Excellence.</h1>
+        <style>
+            #typewriter-text {
+                font-family: 'Montserrat', sans-serif;
+            }
+        </style>
         <script>
-            // Tu script de typewriter COMPLETO
+            // Script de typewriter modificado (más lento)
             document.addEventListener('DOMContentLoaded', function() {
                 const phrases = [
                     "Think Safely.",
@@ -788,7 +793,7 @@
                 let charIndex = 0;
                 let isDeleting = false;
                 let isEnd = false;
-                let typingSpeed = 100;
+                let typingSpeed = 150; // Aumentado de 100 a 150 para más lento
                 
                 function typeWriter() {
                     const currentPhrase = phrases[phraseIndex];
@@ -796,16 +801,16 @@
                     if (isDeleting) {
                         element.textContent = currentPhrase.substring(0, charIndex - 1);
                         charIndex--;
-                        typingSpeed = 50;
+                        typingSpeed = 80; // Aumentado de 50 a 80
                     } else {
                         element.textContent = currentPhrase.substring(0, charIndex + 1);
                         charIndex++;
-                        typingSpeed = 100;
+                        typingSpeed = 150; // Aumentado de 100 a 150
                     }
                     
                     if (!isDeleting && charIndex === currentPhrase.length) {
                         isEnd = true;
-                        typingSpeed = 1500;
+                        typingSpeed = 2000; // Aumentado de 1500 a 2000
                     } else if (isDeleting && charIndex === 0) {
                         isDeleting = false;
                         phraseIndex = (phraseIndex + 1) % phrases.length;
@@ -814,7 +819,7 @@
                     if (isEnd && !isDeleting) {
                         isDeleting = true;
                         isEnd = false;
-                        typingSpeed = 500;
+                        typingSpeed = 800; // Aumentado de 500 a 800
                     }
                     
                     setTimeout(typeWriter, typingSpeed);
@@ -827,7 +832,6 @@
             /* Estilos del texto de misión */
             .mission-text {
                 font-size: 1.5rem;
-
                 font-weight: 600;
                 color: var(--primary-black);
                 text-transform: uppercase;
@@ -1023,7 +1027,6 @@
         <img src="./vuelo.png" alt="Falcon Volando" class="logo-hero-animado">
     </div>
 </section>
-
 <!-- Estilos del video y overlay -->
 <style>
     /* Estructura del hero */
