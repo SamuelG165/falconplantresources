@@ -294,18 +294,19 @@
             cursor: pointer;
         }
         
-        /* Hero Section */
-        .service-hero {
-            position: relative;
-            height: 60vh;
-            min-height: 400px;
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/last_mechanical.jpg') no-repeat center center/cover;
-            display: flex;
-            align-items: center;
-            color: var(--white);
-            text-align: center;
-            padding-top: 80px;
-        }
+.service-hero {
+    position: relative;
+    height: 60vh;
+    min-height: 400px;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), /* Aumenté la opacidad del negro */
+        url('../images/final_mechanical.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    color: var(--white);
+    text-align: center;
+    padding-top: 80px;
+}
         
         .service-hero-content {
             max-width: 800px;
@@ -734,20 +735,20 @@
             opacity: 0.7;
         }
 
-        /* Imagen central realzada */
-        .service-hero::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 387px;
-            height: 519px;
-            background: url('../images/welding\ header.png') no-repeat center center;
-            background-size: cover;
-            filter: brightness(1.15) contrast(1.1);
-            z-index: 0;
-        }
+ .service-hero::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 387px;
+    height: 519px;
+    background: url('../images/final_mechanical.jpg') no-repeat center center;
+    background-size: cover;
+    filter: brightness(1.15) contrast(1.1);
+    opacity: 0.7; /* Añade esta línea para reducir la opacidad */
+    z-index: 0;
+}
 
         .service-hero-content {
             max-width: 800px;
@@ -881,7 +882,7 @@
                 </div>
                 
                 <div class="service-detail-image">
-                    <img src="../images/Mechanical2.jpg" alt="Mechanical Services">
+                    <img src="../images/last_mechanical.jpg" alt="Mechanical Services">
                 </div>
             </div>
         </div>
