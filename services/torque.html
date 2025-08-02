@@ -801,77 +801,146 @@
     </div>
 </section>
 
-    <!-- Service Detail Section -->
-    <section class="service-detail section">
-        <div class="container">
-            <div class="service-detail-content">
-                <div class="service-detail-text">
-                    <h2 class="section-title">Precision Torque Solutions</h2>
-                    <p><strong>Our torque services are performed with hydraulic and/or electric machines for a high variety of bolt diameters and a wide range of torque values. We use different tool formats according to technical needs and work environments.</strong></p>
-                    <p>At Falcon Plant Resources, we understand that proper torque application is critical for equipment integrity, safety, and performance. Our certified technicians use state-of-the-art equipment to ensure precise torque application every time.</p>
-                    
-                    <h3>What We Offer</h3>
-                    <div class="feature-list">
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-file-certificate"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4>Certified Reports</h4>
-                                <p>Delivery of detailed report with certification of all work performed for your records.</p>
-                            </div>
+   <!-- Service Detail Section -->
+<section class="service-detail section">
+    <div class="container">
+        <div class="service-detail-content">
+            <!-- Texto (izquierda en desktop) -->
+            <div class="service-detail-text">
+                <h2 class="section-title">Precision Torque Solutions</h2>
+                <p><strong>Our torque services are performed with hydraulic and/or electric machines for a high variety of bolt diameters and a wide range of torque values. We use different tool formats according to technical needs and work environments.</strong></p>
+                <p>At Falcon Plant Resources, we understand that proper torque application is critical for equipment integrity, safety, and performance. Our certified technicians use state-of-the-art equipment to ensure precise torque application every time.</p>
+                
+                <h3>What We Offer</h3>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-file-certificate"></i>
                         </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-tools"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4>Certified Tools</h4>
-                                <p>All tools are reviewed and certified in our own workshop to ensure accuracy.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-warehouse"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4>Complete Tool Inventory</h4>
-                                <p>We maintain stock of all necessary tools to ensure operational continuity.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-user-graduate"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4>Trained Personnel</h4>
-                                <p>Our team is fully trained in the use of all torque tools and equipment we offer.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="feature-item">
-                            <div class="feature-icon">
-                                <i class="fas fa-file-alt"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h4>Documentation Management</h4>
-                                <p>We handle all documentation and certifications according to client needs and industry standards.</p>
-                            </div>
+                        <div class="feature-text">
+                            <h4>Certified Reports</h4>
+                            <p>Delivery of detailed report with certification of all work performed for your records.</p>
                         </div>
                     </div>
                     
-                    <a href="../index.html#contacto-formulario" class="btn btn-red">Request Torque Service</a>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Certified Tools</h4>
+                            <p>All tools are reviewed and certified in our own workshop to ensure accuracy.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-warehouse"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Complete Tool Inventory</h4>
+                            <p>We maintain stock of all necessary tools to ensure operational continuity.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Trained Personnel</h4>
+                            <p>Our team is fully trained in the use of all torque tools and equipment we offer.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="feature-text">
+                            <h4>Documentation Management</h4>
+                            <p>We handle all documentation and certifications according to client needs and industry standards.</p>
+                        </div>
+                    </div>
                 </div>
                 
+                <a href="../index.html#contacto-formulario" class="btn btn-red">Request Torque Service</a>
+            </div>
+            
+            <!-- Contenedor de imágenes (derecha en desktop, apiladas verticalmente) -->
+            <div class="service-detail-images">
                 <div class="service-detail-image">
                     <img src="../images/torque_new.jpg" alt="Torque Services">
                 </div>
+                <div class="service-detail-image">
+                    <img src="../images/torque_final.jpg" alt="Torque Services">
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- CSS integrado (pégalo en tu hoja de estilos o dentro de <style> en el HTML) -->
+<style>
+    .service-detail-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .service-detail-text {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .service-detail-images {
+        flex: 1;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-detail-image img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    /* Estilos base (opcionales, ajusta según tu diseño) */
+    .section {
+        padding: 60px 0;
+    }
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .feature-list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .feature-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .feature-icon {
+        font-size: 1.2rem;
+        color: #ff0000; /* Ajusta al color de tu tema */
+    }
+    .btn-red {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #ff0000;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+</style>
 
     <!-- Why Choose Section -->
     <section class="why-choose section">
